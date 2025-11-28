@@ -3,7 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>UFO Dodger</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <!-- Game Intro is the first screen the player see's-->
+      <div id="game-intro">
+        <img src="" alt="" />
+        <br />
+        <button>Start Game</button>
+        <p>Use the left and right arrow to control the UFO!</p>
+        <img src="" alt="" />
+      </div>
+
+      <!-- Game Container -->
+      <div id="game-container">
+        <div>
+          <h2>Stats</h2>
+          <p>Score: <span id="score">0</span></p>
+          <p>Lives: <span id="lives">3</span></p>
+        </div>
+        <!-- Game Screen is hidden and coming up with CSS later when the player starts the game -->
+        <div id="game-screen"></div>
+      </div>
+
+      <!-- Game Over is hidden and coming up with CSS later when the player loses all his lives-->
+      <div id="game-over">
+        <img src="" alt="" />
+        <h1>Game Over</h1>
+        <br />
+        <button id="restartBtn">Restart Game</button>
+      </div>
+    </main>
+    <script src="src/obstacles.js"></script>
+    <script src="src/playerUfo.js"></script>
+    <script src="src/game.js"></script>
+    <script src="src/index.js"></script>
+  </body>
 </html>
